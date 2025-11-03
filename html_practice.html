@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="background-color: darkgray;">
+        <nav>
+            <ul style="display:flex; list-style:none; gap:20px">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Section 1</h2>
+        <p>This is a section 1</p>
+        <button style="background-color: rgb(41, 233, 24); border-radius: 10px; padding: 10px" id="button">Click Me</button>
+        <p id="text">Hello!</p>
+    </section>
+    <section>
+        <h2>Section 2</h2>
+        <p>This is a section 2</p>
+    </section>
+    <footer style="background-color: rgb(29, 204, 195);">
+        <p>@ 2025 Ipsita Jati</p>
+    </footer>
+    <script>
+        const btn = document.getElementById("button");
+        const txt = document.getElementById("text");
+
+        btn.addEventListener('click', () =>{
+            txt.innerText = "You clicked the button!";
+        });
+    </script>
+</body>
+</html>
+
+    const [dropdownOpen , setDropdownOpen] = useState(false);
+onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+                {dropdownOpen && (
+                    <ul className="dropdown-menu">
+                        <li><a href="/">Women</a></li>
+                        <li><a href="/">Men</a></li>
+                        <li><a href="/">Kids</a></li>
+                        <li><a href="/">Accessories</a></li>
+                    </ul>
+                )}
+
+                 padding: 205px 30px;
+                 padding: 150px 30px;
